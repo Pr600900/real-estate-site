@@ -11,25 +11,40 @@
             padding: 0;
             direction: rtl;
             text-align: center;
+            background-color: #f4f4f4;
         }
         .header {
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
             padding: 20px;
-            font-size: 24px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease-in-out;
         }
         .main-content {
-            padding: 40px;
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
         }
         .cta-button {
-            background-color: #008CBA;
+            background-color: #e74c3c;
             color: white;
             padding: 15px 30px;
             text-decoration: none;
-            font-size: 18px;
-            border-radius: 5px;
+            font-size: 20px;
+            border-radius: 8px;
             display: inline-block;
             margin-top: 20px;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #c0392b;
+            transform: scale(1.1);
         }
         .projects {
             display: flex;
@@ -42,14 +57,39 @@
             width: 300px;
             border: 1px solid #ddd;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+            background: white;
+            transition: transform 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        .project-card:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
         }
         .about {
             margin-top: 50px;
             padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>

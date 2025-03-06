@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הפרויקטים שלנו</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #f39c12;
+        }
+        .main-content {
+            padding: 50px;
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .project-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.15);
+            background: white;
+            transition: transform 0.3s ease-in-out;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">הפרויקטים שלנו</div>
+    <div class="nav">
+        <a href="index.html">דף הבית</a>
+        <a href="projects.html">הפרויקטים</a>
+        <a href="about.html">אודות</a>
+        <a href="contact.html">צור קשר</a>
+    </div>
+    <div class="main-content">
+        <h2>גלריית הפרויקטים שלנו</h2>
+        <div class="projects">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="פרויקט יוקרתי בירושלים">
+                <h3>פרויקט יוקרתי בירושלים</h3>
+                <p>דירות מפוארות עם נוף עוצר נשימה.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.jpg" alt="שכונת מגורים מודרנית">
+                <h3>שכונת מגורים מודרנית</h3>
+                <p>קהילה חדשנית עם תשתיות מתקדמות.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="בניין עסקים בתל אביב">
+                <h3>בניין עסקים בתל אביב</h3>
+                <p>משרדים חכמים בלב העיר.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

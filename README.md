@@ -21,6 +21,22 @@
             font-weight: bold;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             animation: fadeInDown 1s ease-in-out;
+            position: relative;
+        }
+        .nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        .nav a:hover {
+            color: #f39c12;
         }
         .main-content {
             padding: 50px;
@@ -94,7 +110,13 @@
     </style>
 </head>
 <body>
-    <div class="header">ברוכים הבאים ליזמות פרימיום הנדל"ן שלנו</div>
+    <div class="header">ברוכים הבאים ליזמות הנדל"ן שלנו</div>
+    <div class="nav">
+        <a href="index.html">דף הבית</a>
+        <a href="projects.html">הפרויקטים</a>
+        <a href="about.html">אודות</a>
+        <a href="contact.html">צור קשר</a>
+    </div>
     <div class="main-content">
         <h1>השקעות ופרויקטים פורצי דרך</h1>
         <p>אנו מובילים את תחום יזמות הנדל"ן, עם פרויקטים חדשניים ושירות מקצועי.</p>
@@ -108,12 +130,12 @@
         <h2>הפרויקטים שלנו</h2>
         <div class="projects">
             <div class="project-card">
-                <h3>פרויקט יוקרתי ברחוב אלעשה בירושלים</h3>
+                <h3>פרויקט יוקרתי בירושלים</h3>
                 <p>דירות מפוארות עם נוף עוצר נשימה.</p>
             </div>
             <div class="project-card">
-                <h3>שכונת סהנדריה המשובחת</h3>
-                <p>קהילה טובה ואיכותית עם תשתיות מתקדמות.</p>
+                <h3>שכונת מגורים מודרנית</h3>
+                <p>קהילה חדשנית עם תשתיות מתקדמות.</p>
             </div>
         </div>
     </div>

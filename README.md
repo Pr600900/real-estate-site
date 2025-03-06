@@ -113,7 +113,7 @@
     <div class="header">ברוכים הבאים ליזמות הנדל"ן שלנו</div>
     <div class="nav">
         <a href="index.html">דף הבית</a>
-        <a href="projects.html">הפרויקטים</a>
+        <a href="projects.html">הפרויקטים</a>projects.html
         <a href="about.html">אודות</a>
         <a href="contact.html">צור קשר</a>
     </div>
